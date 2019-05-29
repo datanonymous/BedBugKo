@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.motion.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#696969"
-    app:layoutDescription="@xml/scene_01"
     tools:context=".MainActivity">
 
     <ImageView
@@ -223,4 +222,4 @@
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 
-</android.support.constraint.motion.MotionLayout>
+</android.support.constraint.ConstraintLayout>
