@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Bot4Frag"></activity>
+        <activity android:name=".Bot3Frag" />
+        <activity android:name=".Bot2Frag" />
+        <activity android:name=".Bot1Frag" />
+        <activity android:name=".FrameActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

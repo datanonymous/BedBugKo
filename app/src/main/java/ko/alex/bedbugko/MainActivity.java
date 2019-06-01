@@ -102,9 +102,9 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     finish(); //https://stackoverflow.com/questions/10847526/what-exactly-activity-finish-method-is-doing
-//                    Intent intent = new Intent(MainActivity.this, TableOfContents.class);
-//                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                    startActivity(intent);
+                    Intent intent = new Intent(MainActivity.this, FrameActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         if (mAuth.getCurrentUser() != null) {
             finish(); //https://stackoverflow.com/questions/10847526/what-exactly-activity-finish-method-is-doing
-//            startActivity(new Intent(this, TableOfContents.class));
+            startActivity(new Intent(this, FrameActivity.class));
         }
     } //End onStart()
 
@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
                     finish(); //https://stackoverflow.com/questions/10847526/what-exactly-activity-finish-method-is-doing
-//                    startActivity(new Intent(MainActivity.this, TableOfContents.class));
+                    startActivity(new Intent(MainActivity.this, FrameActivity.class));
                 } else {
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
                         Toast.makeText(getApplicationContext(), "You are already registered", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bot1"
+        android:icon="@drawable/pregtest1"
+        android:title="Device Results" />
+
+    <item
+        android:id="@+id/bot2"
+        android:icon="@drawable/magglass"
+        android:title="Bed bug knowledge" />
+
+    <item
+        android:id="@+id/bot3"
+        android:icon="@drawable/pco"
+        android:title="Pest Control" />
+
+    <item
+        android:id="@+id/bot4"
+        android:icon="@drawable/report1"
+        android:title="Report" />
+
+</menu>
