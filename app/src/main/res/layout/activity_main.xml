@@ -138,6 +138,7 @@
                 android:ems="10"
                 android:hint="EMAIL"
                 android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -147,6 +148,7 @@
                 android:ems="10"
                 android:hint="PASSWORD"
                 android:inputType="textPassword"
+                android:textColor="#FFFFFF"
                 android:textColorHint="#FFFFFF" />
 
             <android.support.design.widget.FloatingActionButton
@@ -154,7 +156,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                app:srcCompat="@android:drawable/ic_menu_send" />
+                app:maxImageSize="50dp"
+                app:srcCompat="@drawable/loginicon" />
         </LinearLayout>
 
         <Button
@@ -220,7 +223,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:clickable="true"
-                app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+                app:maxImageSize="50dp"
+                app:srcCompat="@drawable/registericon" />
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
 
