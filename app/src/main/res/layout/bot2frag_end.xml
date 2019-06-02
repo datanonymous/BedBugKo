@@ -2,6 +2,141 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frag2constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Bot2Frag"/>
+    tools:context=".Bot2Frag">
+
+    <ImageView
+        android:id="@+id/bedbug1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bedbug2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug2"
+        app:layout_constraintStart_toEndOf="@+id/bedbug1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bedbug3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedbug1" />
+
+    <ImageView
+        android:id="@+id/bedbug4"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug4"
+        app:layout_constraintBottom_toTopOf="@+id/bedbug6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedbug3" />
+
+    <ImageView
+        android:id="@+id/bedbug5"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug5"
+        app:layout_constraintBottom_toBottomOf="@+id/bedbug2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bedbug2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bedbug6"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug6"
+        app:layout_constraintBottom_toTopOf="@+id/bedbug8"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/bedbug7"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bedbug8"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bedbug8"
+        app:layout_constraintBottom_toTopOf="@+id/bedbug7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/scrollupTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:text="Scroll Up"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Bed bugs have different developmental stages, and will appear differently depending on whether they have been fed!"
+        app:layout_constraintBottom_toTopOf="@+id/bedbug4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bedbug3"
+        app:layout_constraintTop_toBottomOf="@+id/bedbug2" />
+
+    <TextView
+        android:id="@+id/textViewMiddle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Bed bug eggs (top image) are translucent, and will be difficult to spot.  Keep an eye out for fecal spots!"
+        app:layout_constraintBottom_toTopOf="@+id/bedbug8"
+        app:layout_constraintEnd_toStartOf="@+id/bedbug4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bedbug3" />
+
+    <TextView
+        android:id="@+id/textViewBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Fecal spots (digested blood) are often telltale signs that bed bugs are present. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bedbug8"
+        app:layout_constraintTop_toBottomOf="@+id/bedbug6" />
+</android.support.constraint.ConstraintLayout>

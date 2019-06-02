@@ -7,7 +7,7 @@
         motion:constraintSetEnd="@layout/bot2frag_end"
         motion:duration="1000">
         <OnSwipe
-            motion:touchAnchorId="@+id/textView"
+            motion:touchAnchorId="@+id/scrollupTextView"
             motion:touchAnchorSide="top"
             motion:dragDirection="dragUp" />
     </Transition>
