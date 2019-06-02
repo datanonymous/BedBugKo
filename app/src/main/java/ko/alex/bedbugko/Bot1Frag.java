@@ -98,9 +98,9 @@ public class Bot1Frag extends Fragment {
 
         float timeRemaining = ((minutes*60f + seconds) / 300f)*100f;
         int intTimeRemaining = Math.round(timeRemaining);
-        Toast toast = Toast.makeText(getActivity(), "Time remaining is: " + timeRemaining + " seconds", Toast.LENGTH_SHORT);
-        toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
-        toast.show();
+//        Toast toast = Toast.makeText(getActivity(), "Time remaining is: " + timeRemaining + " seconds", Toast.LENGTH_SHORT);
+//        toast.setGravity(Gravity.TOP|Gravity.RIGHT, 0, 0);
+//        toast.show();
         progressBar.setProgress(intTimeRemaining);
     }
 
